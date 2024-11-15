@@ -108,7 +108,7 @@ body {
 }
 
 .product-button:hover {
-    background-color: #c0392b;
+    background-color: darkgray !important;
 }
 
 /* Pseudo-elements - Sale badge */
