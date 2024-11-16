@@ -107,10 +107,6 @@ body {
     margin-top: 10px;
 }
 
-.product-button:hover {
-    background-color: darkgray !important;
-}
-
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";

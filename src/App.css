@@ -33,18 +33,18 @@
  top: 100px;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
+ margin-top: 15em;
+  margin-left: 12em;
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
   /* background-color: red; */
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  /* height: 400px; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,23 +58,23 @@
 }
 
 .content h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  /* margin-bottom: 10px; */
 }
 
 .content p {
-  font-size: 25px;
+  font-size: 1em;
 }
 
 .divider {
-  width: 50px;
+  width: 7em;
   height: 2px;
   background-color: #4caf50;
   margin: 10px 0;
 }
 
 .get-started-button {
-  padding: 15px 25px;
+  padding: 10px 15px;
   font-size: 23px;
   border: none;
   border-radius: 5px;
@@ -82,7 +82,7 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 .get-started-button:hover {

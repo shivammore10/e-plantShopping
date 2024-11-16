@@ -230,7 +230,7 @@ function ProductList() {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: '1100px',
+    width: '50%',
    }
    const styleA={
     color: 'white',
@@ -294,9 +294,13 @@ const handlePlantsClick = (e) => {
                 <div className="product-title">{plant.name}</div>
                 <div className='product-price'>{plant.cost}</div>
                 <div>{plant.description}</div>
-                <button  className="product-button" onClick={() => handleAddToCart(plant)}disabled={addedToCart[plant.name]}>
-                  {addedToCart[plant.name] ? "Added to Cart" : "Add to Cart"}
-                </button>
+                {addedToCart[plant.name] ? 
+                <button  className="product-button" style={{ backgroundColor: "darkgray" }} onClick={() => handleAddToCart(plant)} disabled={addedToCart[plant.name]}>
+                   Added to Cart
+                </button> :
+                <button  className="product-button" onClick={() => handleAddToCart(plant)} disabled={addedToCart[plant.name]}>
+                    Add to Cart
+                </button>}
             </div>
             ))}
         </div>
